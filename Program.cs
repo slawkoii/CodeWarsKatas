@@ -10,7 +10,7 @@ namespace CodeWarsKatas
             int[] b = { 7, 8, 8, 9, 11 };
             int[] vowelsCodesTabel = new int[5] { (int)'a', (int)'e', (int)'i', (int)'o', (int)'u' };
             //ArrayKatas.ShowAnArray(StringKatas.IsVow(a));
-            Console.WriteLine(BaisicKatas.ReverseNumber(123));
+            Console.WriteLine(StringKatas.MakeComplement("ATTGC"));
         }
     }
 }

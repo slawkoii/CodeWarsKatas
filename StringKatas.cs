@@ -15,5 +15,7 @@ namespace CodeWarsKatas
             }
             return a;
         }
+        public static string MakeComplement(string dna) =>  dna.Replace('A', 't').Replace('C', 'g').Replace('T', 'a').Replace('G', 'c').ToUpper();
+        
     }
 }

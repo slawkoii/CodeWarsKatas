@@ -26,6 +26,8 @@ namespace CodeWarsKatas
 
         public static int ReverseNumber(int n)
         {
+            int a = 1;
+            if (n < 0) a = -1; n *= a;
             int result = 0;
             while (n > 0)
             {
@@ -33,7 +35,7 @@ namespace CodeWarsKatas
                 n /= 10;
             }
 
-            return result;
+            return a*result;
         }
     }
 }
