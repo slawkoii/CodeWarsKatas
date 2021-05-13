@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace CodeWarsKatas
@@ -21,11 +20,22 @@ namespace CodeWarsKatas
         public static bool SmallEnough(int[] a, int limit)
         {
             bool answer = true;
-            for(int i = 0; i <= a.Length; i++)
+            for (int i = 0; i <= a.Length; i++)
             {
                 if (a[i] > limit) answer = false;
             }
             return answer;
+        }
+
+        public static string[] AddLength(string str)
+        {
+            string[] arr = str.Split(" ");
+            List<string> result = new List<string>();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result.Add(arr[i] + " " + arr[i].Length);
+            }
+            return result.ToArray();
         }
 
     }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace CodeWarsKatas
 {
@@ -35,7 +32,12 @@ namespace CodeWarsKatas
                 n /= 10;
             }
 
-            return a*result;
+            return a * result;
+        }
+
+        public static BigInteger[] PowersOfTwo(int n)
+        {
+            return new BigInteger[0];
         }
     }
 }
