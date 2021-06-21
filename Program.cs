@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace CodeWarsKatas
 {
@@ -6,11 +7,13 @@ namespace CodeWarsKatas
     {
         static void Main(string[] args)
         {
-            string[] toShow = ArrayKatas.AddLength("apple ban");
+            BigInteger[] toShow = BaisicKatas.PowersOfTwo(3);
             for (int i = 0; i < toShow.Length; i++) 
             {
                 Console.WriteLine(toShow[i]);
             }
+
+           
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Numerics;
 
 namespace CodeWarsKatas
 {
-    class BaisicKatas
+    public class BaisicKatas
     {
         public static string SwitchItUp(int number)
         {
@@ -37,7 +38,15 @@ namespace CodeWarsKatas
 
         public static BigInteger[] PowersOfTwo(int n)
         {
-            return new BigInteger[0];
+            BigInteger[] result = new BigInteger[n + 1];
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                result[i] = (BigInteger)System.Math.Pow(2, i);
+            }
+
+            return result;
+            
         }
     }
 }
