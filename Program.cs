@@ -7,7 +7,8 @@ namespace CodeWarsKatas
     {
         static void Main(string[] args)
         {
-            BigInteger[] toShow = BaisicKatas.PowersOfTwo(3);
+            var arr = new object[] { 'a', 'b', 'c', 'd', 'e' };
+            object[] toShow = ArrayKatas.TakeFirstElements(arr,-1);
             for (int i = 0; i < toShow.Length; i++) 
             {
                 Console.WriteLine(toShow[i]);

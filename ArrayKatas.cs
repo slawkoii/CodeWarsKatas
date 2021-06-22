@@ -38,5 +38,18 @@ namespace CodeWarsKatas
             return result.ToArray();
         }
 
+        public static object[] TakeFirstElements(object[] array, int n = 1)
+        {
+
+            object[] result;            
+            if ((n <= 0) || (n>array.Length))  result = new object[] { };
+            else result = new object[n];
+            for (int i=0; i < n; i++)
+            {
+                result[i] = array[i];
+            }
+            return result;
+        }
+
     }
 }
