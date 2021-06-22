@@ -41,8 +41,9 @@ namespace CodeWarsKatas
         public static object[] TakeFirstElements(object[] array, int n = 1)
         {
 
-            object[] result;            
-            if ((n <= 0) || (n>array.Length))  result = new object[] { };
+            object[] result;
+            if (n > array.Length) n = array.Length;
+            if (n <= 0)  result = new object[] { }; 
             else result = new object[n];
             for (int i=0; i < n; i++)
             {
