@@ -17,5 +17,12 @@ namespace CodeWarsKatas
         }
         public static string MakeComplement(string dna) => dna.Replace('A', 't').Replace('C', 'g').Replace('T', 'a').Replace('G', 'c').ToUpper();
 
+        public static string NameShuffler(string str)
+        {
+            string[] names = str.Split(" ");
+
+            return names[1] + " " + names[0];
+        }
+
     }
 }

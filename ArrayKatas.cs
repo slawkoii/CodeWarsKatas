@@ -42,13 +42,18 @@ namespace CodeWarsKatas
         {
 
             object[] result;
+
             if (n > array.Length) n = array.Length;
+
             if (n <= 0)  result = new object[] { }; 
+
             else result = new object[n];
+
             for (int i=0; i < n; i++)
             {
                 result[i] = array[i];
             }
+
             return result;
         }
 
