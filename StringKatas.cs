@@ -21,8 +21,9 @@ namespace CodeWarsKatas
         {
             string[] names = str.Split(" ");
 
-            return names[1] + " " + names[0];
-        }
+            return names[1] + " " + names[0];        }
+
+        public static bool Feast(string beast, string dish) => ((beast.Substring(0, 1) == dish.Substring(0, 1)) && (beast.Substring(beast.Length - 1, 1) == (dish.Substring(dish.Length - 1, 1))));      
 
     }
 }
